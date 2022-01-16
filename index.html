@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="Madhan" />
+    <meta property="og:title" content="Thivagar" />
     <meta property="og:type" content="portfolio" />
     <meta property="og:url" content="https://thivagar-manickam.github.io/" />
     <meta property="og:image" content="images/thivagar.jpg" />
@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function calculateYearOfExperience() {
+            var currentDate = new Date();
+            var joiningDate = new Date('10/11/2017');
+
+            var numOfDays = parseInt((currentDate - joiningDate) / (24 * 3600 * 1000))
+            document.getElementById("yearOfExperience").value = parseFloat((numOfDays/365).toPrecision(2))
+        })();
+    </script>
 </head>
 
 <body>
@@ -98,13 +107,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading">About Thivagar</h2>
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I have 3+ years experience in the field of Software Development. Been part of all the phases of SDLC,
-                        to develop a high qualityf product. Have experience working in Angular, React and Ext.js frameworks.
-                        Experied .Net and Node.js developer. Apart from this have good client handling and interpersonal skillset.
+                        Thivagar have <span id="yearOfExperience"></span>+ years experience in the field of Software Development.
+                        He has been involved in all phases of Software Development Life Cycle, to develop software product of high
+                        quality.
+                        He has a vast experience working in Angular and Ext.js frameworks, with sound knowledge in the backend tech Stack
+                        like Node.js and .Net framework.
+                        Apart from the development experience, he also possess strong inter-personal skills and good
+                        communication.
                     </p>
                 </div>
             </div>
@@ -115,12 +128,12 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="February 2020 – Present">
+            <div data-date="February 2020 - Present">
                 <h3>UL India Private Limited</h3>
                 <h4>Software Developer</h4>
             </div>
 
-            <div data-date="October 2017 – February 2020">
+            <div data-date="October 2017 - February 2020">
                 <h3>Sysvine Technologies</h3>
                 <h4>Software Engineer</h4>
             </div>
@@ -132,10 +145,16 @@
         <h2 class="heading">Education</h2>
 
         <div class="education-block">
+            <h3>SRM Institue of Science and Technology</h3>
+            <span class="education-date">August 2021 - December 2023</span>
+            <h4>Master of Technology in Data Science</h4>
+        </div>
+
+        <div class="education-block">
             <h3>Sri Muthukumaran Institute Of Technology</h3>
             <span class="education-date">August 2013 - April 2017</span>
             <h4>Bachelor of Technology in Information Technology</h4>
-            <p>Secured a Gold Medal for having a 8.3 CGPA at University Graduation Function</p>
+            <p>Secured Gold Medal for having a 8.3 CGPA at University Graduation Function</p>
         </div>
         <!-- End .education-block -->
     </div>
@@ -149,7 +168,23 @@
                     <!-- Start .project-info -->
                     <div class="project shadow-large">
                         <div class="project-image">
-                            <img src="./images/angular.png" alt="Angular" width="150" height="150" />
+                            <img src="./images/python.png" alt="Python Logo" width="150" height="150" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3 text-align="center">Hypothesis Testing Mindmap</h3>
+                            <a href="https://github.com/thivagar-manickam/hypothesis-testing-mindmap" target="_blank">View
+                                Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+                <div class="text-center col-md-4">
+                    <!-- Start .project-info -->
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="./images/angular.png" alt="Angular Logo" width="150" height="150" />
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
@@ -165,12 +200,12 @@
                     <!-- Start .project-info -->
                     <div class="project shadow-large">
                         <div class="project-image">
-                            <img src="./images/angular.png" alt="Angular" width="150" height="150" />
+                            <img src="./images/python.png" alt="Python Logo" width="150" height="150" />
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
-                            <h3 text-align="center">Consignment Tracking using Angular</h3>
-                            <a href="https://github.com/thivagar-manickam/Consignment-Tracking" target="_blank">View
+                            <h3 text-align="center">Python Mindmap</h3>
+                            <a href="https://github.com/thivagar-manickam/python-mindmap" target="_blank">View
                                 Project</a>
                         </div>
                         <!-- End .project-info -->
@@ -183,7 +218,7 @@
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading">Programming Language</h2>
         <ul>
             <li>Python</li>
             <li>Angular</li>
@@ -197,12 +232,32 @@
             <li>Typescript</li>
             <li>Node.js</li>
             <li>C#</li>
+        </ul>
+    </div>
+    <div id="skills">
+        <h2 class="heading">Databases</h2>
+        <ul>
             <li>PostgreSQL</li>
             <li>MongoDB</li>
             <li>SQL Server</li>
+        </ul>
+    </div>
+    <div id="skills">
+        <h2 class="heading">Version Control and Development Tools</h2>
+        <ul>
             <li>Git</li>
             <li>GitHub</li>
-            <li>Azure</li>
+            <li>Azure Devops</li>
+            <li>Jupyter</li>
+            <li>Visual Studio Code</li>
+            <li>Visual Studio</li>
+        </ul>
+    </div>
+    <div id="skills">
+        <h2 class="heading">Operation Systems</h2>
+        <ul>
+            <li>MacOS</li>
+            <li>Windows</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -212,7 +267,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 Thivagar M
+                        Copyright &copy; 2022 Thivagar M
                     </p>
                 </div>
                 <div class="col-sm-2 top">
