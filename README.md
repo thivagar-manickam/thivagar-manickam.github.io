@@ -1,4 +1,5 @@
-# thivagar-manickam.github.io
-My personal porfolio github page
+# Thivagar M E-Portfolio
 
-Forked from - https://github.com/RyanFitzgerald/devportfolio and made few changes from my end
+This repository holds the code for my e-portfolio.
+
+I have used the [devportfolio](https://github.com/RyanFitzgerald/devportfolio) template for the design of portfolio.
